@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Practice - Question 05</title>
+  </head>
+  <body>
+    <h1>Question 05: Delete Object Properties</h1>
+
+    <h3>Note: Check the answers in the browser console.</h3>
+
+    <h2>Question:</h2>
+
+    <p>Create an object named user with the following properties:</p>
+
+    <ul>
+      <li>name: Vivek</li>
+      <li>age: 22</li>
+      <li>email: vivek@gmail.com</li>
+      <li>city: Chalisgaon</li>
+    </ul>
+
+    <h2>Tasks:</h2>
+
+    <ol>
+      <li>Print the original user object.</li>
+      <li>Delete the email property.</li>
+      <li>Delete the age property.</li>
+      <li>Print the updated user object.</li>
+    </ol>
+
+    <script>
+      // Write your JavaScript code here.
+      const user = {
+        name: "vivek",
+        age: 22,
+        email: "vivek@gmail.com",
+        city: "chalisgaon",
+      };
+
+      //   console.log("ORIGINAL OBJECT ", user);
+      console.log("ORIGINAL OBJECT", structuredClone(user));
+
+      delete user.email;
+      delete user.age;
+
+      console.log("UPDATED USER OBJECT ", user);
+    </script>
+  </body>
+</html>
